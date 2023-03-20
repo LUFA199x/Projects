@@ -14,7 +14,7 @@ spec:
   sources:
   - repoURL: https://github.com/LUFA199x/Projects.git
     targetRevision: main
-    path: myexam/values/
+    path: Projectsvalues/
   syncPolicy:
     automated:
       prune: true
