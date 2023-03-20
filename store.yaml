@@ -14,7 +14,7 @@ spec:
   sources:
   - repoURL: https://github.com/LUFA199x/Projects.git
     targetRevision: main
-    path: Projects/values/
+    path: projects/values/
   syncPolicy:
     automated:
       prune: true
