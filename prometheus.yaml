@@ -1,4 +1,3 @@
-# Description: Prometheus application for ArgoCD############################################
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -20,7 +19,7 @@ spec:
       targetRevision: 19.7.2
       helm:
         valueFiles:
-          - $lufa199x/projects/values/prometheus.yaml
+          - $lufa199x/values/prometheus.yaml
 
   syncPolicy:
     automated:
@@ -28,5 +27,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-  
-  progressDeadlineSeconds: 600
