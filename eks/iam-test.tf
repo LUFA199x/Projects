@@ -1,4 +1,5 @@
 data "aws_iam_policy_document" "test_oidc_assume_role_policy" {
+
   statement {
     actions = ["sts:AssumeRoleWithWebIdentity"]
     effect  = "Allow"
@@ -21,8 +22,10 @@ resource "aws_iam_role" "test_oidc" {
   name               = "test-oidc"
 }
 
-resource "aws_iam_policy" "test-policy" {
-  name = "test-policy"
+
+resource "aws_iam_policy" "test-policy2" {
+
+  name = "test-policy2"
 
   policy = jsonencode({
     Statement = [{
@@ -39,7 +42,7 @@ resource "aws_iam_policy" "test-policy" {
 
 resource "aws_iam_role_policy_attachment" "test_attach" {
   role       = aws_iam_role.test_oidc.name
-  policy_arn = aws_iam_policy.test-policy.arn
+  policy_arn = aws_iam_policy.test-policy2.arn
 }
 
 output "test_policy_arn" {
