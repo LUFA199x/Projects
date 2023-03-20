@@ -20,7 +20,7 @@ spec:
     targetRevision: 6.52.2
     helm:
       valueFiles:
-        - $lufa199x/myexam/values/grafana.yaml
+        - $lufa199x/Projects/values/grafana.yaml
   syncPolicy:
     automated:
       prune: true
