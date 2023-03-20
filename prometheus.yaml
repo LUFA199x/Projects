@@ -20,7 +20,7 @@ spec:
       targetRevision: 19.7.2
       helm:
         valueFiles:
-          - $lufa199x/myexam/values/prometheus.yaml
+          - $lufa199x/Projects/values/prometheus.yaml
 
   syncPolicy:
     automated:
