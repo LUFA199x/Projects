@@ -19,7 +19,7 @@ spec:
       targetRevision: 19.7.2
       helm:
         valueFiles:
-          - $lufa199x/values/prometheus.yaml
+          - $lufa199x/apps/values/prometheus.yaml
 
   syncPolicy:
     automated:
