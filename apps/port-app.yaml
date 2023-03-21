@@ -22,7 +22,7 @@ spec:
             cpu: 500m
             memory: 1Gi
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
 
 ---
 
@@ -39,5 +39,5 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 8000
+      targetPort: 80
   type: LoadBalancer
