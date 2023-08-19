@@ -1,4 +1,4 @@
-# I have utilized Kubernetes as the hosting platform for a system based on microservices architecture. Additionally, I have implemented an Infrastructure as Code (IaaC) tool to automate the provisioning process and optimize the deployment workflow, ensuring that service deployments are both fast and consistent.
+# I have utilized Kubernetes as the hosting platform for a system based on microservices architecture. Additionally, I have implemented an Infrastructure as Code (IaC) tool to automate the provisioning process and optimize the deployment workflow, ensuring that service deployments are both fast and consistent.
 
 ### Setup Details according to the Project memo
 
